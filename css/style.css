@@ -1,0 +1,120 @@
+/* PARA OCULTAR BARRA DE SCROLL */
+::-webkit-scrollbar {
+    display: none;
+    width: 10px;
+  }
+  
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-moz-number-spin-box {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+  }
+/* PARA OCULTAR BARRA DE SCROLL */
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+*{
+    font-family: 'Montserrat';
+    color: white;
+  }
+  
+  body {
+  padding-top: 85px;
+  scrollbar-color: #000000;  
+  scrollbar-base-color: #000000;
+  background-color: rgb(175, 140, 99)
+  }
+
+  .bg-dark{
+    background-color: rgb(130, 94, 52) !important;
+  }
+
+  
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 2px solid #673c00;
+    box-shadow: 0 0 10px #000000;
+    background-color: rgb(130, 94, 52);
+  }
+  .navbar div,.nav-link{
+    background-color: rgb(130, 94, 52);
+  }
+  .navbar img{
+    background-color: rgb(130, 94, 52);
+    width: 250px;
+  }
+  .nav-link:hover{
+    color: #ff0000;
+  }
+  .nav-link.active{
+    color: #ff6200;
+  }
+  .nav-link.active:hover{
+    color: #fd567a;
+    text-shadow: 0 0 20px #fa2c8c;
+  }
+
+  /* Esto solo en 1024px */
+  #ingresar{
+    position:absolute;right:10px
+  }
+
+
+  .listamazos{
+    background-color: #673c00;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 50px;
+    width: 400px;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .listamazos li{
+    margin: 10px 0;
+  }
+  .listamazos li>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carta{
+    width: 200px;
+    margin: 20px;
+    height: 300px;
+    background-color: #e2843b;
+  }
+
+  #deckbuilder{
+    background-color: #673c00;
+    width: 600px;
+  }
+  #deckbuilder li{
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+  }
+
+  input{
+    background-color: #673c00;
+  }
