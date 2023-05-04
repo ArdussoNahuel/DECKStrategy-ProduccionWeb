@@ -19,8 +19,12 @@
   }
 /* PARA OCULTAR BARRA DE SCROLL */
 
-
-
+/* Variables Globales */
+:root {
+  --marron1: #523000;
+  --marron2: rgb(100, 73, 41);
+  --gris1:#23201e;
+}
 
 a{
     text-decoration: none;
@@ -32,50 +36,46 @@ a{
   }
   
   body {
-  padding-top: 85px;
-  scrollbar-color: #000000;  
-  scrollbar-base-color: #000000;
-  background-color: rgb(175, 140, 99)
+    background-color: var(--gris1);
+    padding-top: 3.5rem;
   }
-
-  .bg-dark{
-    background-color: rgb(130, 94, 52) !important;
+  nav {
+    background-color: var(--marron1);
   }
-
-  
-.navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    border-bottom: 2px solid #673c00;
-    box-shadow: 0 0 10px #000000;
-    background-color: rgb(130, 94, 52);
+  a.nav-link{
+    color: white;
   }
-  .navbar div,.nav-link{
-    background-color: rgb(130, 94, 52);
-  }
-  .navbar img{
-    background-color: rgb(130, 94, 52);
-    width: 250px;
+  a.activo{
+    font-weight: bold;
   }
   .nav-link:hover{
-    color: #ff0000;
+    color: #fd567a;
   }
-  .nav-link.active{
-    color: #ff6200;
-  }
-  .nav-link.active:hover{
+
+  .nav-link.activo:hover{
     color: #fd567a;
     text-shadow: 0 0 20px #fa2c8c;
   }
 
-  /* Esto solo en 1024px */
-  #ingresar{
-    position:absolute;right:10px
+  #baner{
+    background-image: url(../img/fondo-baner.jpeg);
+    height: 7rem;
+
+  }
+  .listamazo{
+    background-color: var(--marron1);
   }
 
+  .img-logo{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .card-deck{
+    background-color: var(--gris1);
+    padding: 0.2rem;
+    margin: 0.2rem;
+  }
 
   .listamazos{
     background-color: #673c00;

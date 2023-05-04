@@ -21,7 +21,7 @@ require "componentes/_head.php";
 <title>Creador de Mazos | DeckStrategy</title>
 </head>
 
-<body class="bg-dark">
+<body>
     
 <?php
     require "componentes/_header.php";
