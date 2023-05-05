@@ -11,7 +11,7 @@
           <a class="nav-link <?php if ($titulo=='Inicio'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="index"';endif;?>>Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($titulo=='Cartas'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="cartas"';endif;?>>Cartas</a>
+          <a class="nav-link <?php if ($titulo=='Cartas'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="cartas"';endif;?>>Galeria de Cartas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?php if ($titulo=='Randomizador'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="randomizador" target="_blank"';endif;?>>Randomizador de Mazo</a>

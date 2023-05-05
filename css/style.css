@@ -71,12 +71,28 @@ a{
     height: 3rem;
   }
 
+  .img-logo-carta-en-mazo{
+    width: 2rem;
+    height: 2rem;
+  }
+  .carta-en-mazo{
+    background-color: rgb(118, 89, 17);
+  }
+
   .card-deck{
     background-color: var(--gris1);
     padding: 0.2rem;
     margin: 0.2rem;
   }
 
+  form#filtro-carta{
+    background-color: var(--marron2);
+  }
+
+  #selectTipo1>option,#selectTipo2>option{
+    color: #23201e;
+  }
+  /*
   .listamazos{
     background-color: #673c00;
     padding: 10px;
@@ -117,4 +133,4 @@ a{
 
   input{
     background-color: #673c00;
-  }
+  }*/

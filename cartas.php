@@ -27,10 +27,69 @@ require "componentes/_head.php";
     require "componentes/_header.php";
     ?>
 
-<section>
-    <h1 class="m-4">Todas las cartas</h1>
-    <div id="galeria" style="display: flex;flex-wrap:wrap;justify-content:space-evenly;">
-        <?php 
+<section class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center m-4">Galeria de Cartas</h1>
+      <form class="row align-items-center p-3 mx-3" id="filtro-carta">
+        <div class="col">
+          <label  for="autoSizingInput">Name</label>
+          <input type="text" class="form-control my-2" id="autoSizingInput" placeholder="Nombre...">
+          <button type="submit" class="btn btn-primary my-2">Buscar</button>
+        </div>
+        <div class="col">
+          <label for="autoSizingSelect">Tipos</label>
+          <select class="form-select my-2" id="selectTipo1">
+            <option selected>Cualquiera</option>
+            <option value="1">Criatura</option>
+            <option value="2">Encantamiento</option>
+            <option value="3">Instantaneo</option>
+          </select>
+          <select class="form-select my-2" id="selectTipo2">
+            <option selected>Cualquiera</option>
+            <option value="1">Legendaria</option>
+            <option value="2">Guerrero</option>
+            <option value="3">Zombie</option>
+          </select>
+        </div>
+        <div class="col">
+        <label for="autoSizingSelect">Color</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Rojo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Azul
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Verde
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Blanco
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+            <label class="form-check-label" for="autoSizingCheck">
+              Negro
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row justify-content-evenly mt-3">
+  <?php 
         $cartas=["https://cards.scryfall.io/png/front/9/2/9226e41a-2d0f-45a4-8f20-957b74162f4e.png?1645978267",
         'https://cards.scryfall.io/png/front/1/a/1a280496-dc22-4a8b-a1d0-1fb04be29de4.png?1645977859',
         'https://cards.scryfall.io/png/front/2/9/296acbcc-e479-4885-a7da-1628dd0525a0.png?1645977115',
@@ -45,9 +104,9 @@ require "componentes/_head.php";
 
         foreach($cartas as $carta){
         ?>
-        <div class="carta"><img class="img-fluid" src=<?php echo $carta ?> alt="..."></div>
+        <div class="col-lg-2 m-3"><img class="img-fluid" src=<?php echo $carta ?> alt="..."></div>
         <?php
         }
         ?>
-    </div>
+  </div>
 </section>
