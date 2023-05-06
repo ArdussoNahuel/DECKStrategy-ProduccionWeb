@@ -34,7 +34,7 @@ require "componentes/_head.php";
             <div class="col">
             <form class="row align-items-center p-3 position-relative" id="filtro-carta">
                 <div class="col">
-                <label  for="autoSizingInput">Name</label>
+                <label  for="autoSizingInput">Nombre</label>
                 <input type="text" class="form-control my-2" id="autoSizingInput" placeholder="Nombre...">
                 <button type="submit" class="btn btn-primary my-2">Buscar</button>
                 </div>

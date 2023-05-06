@@ -22,8 +22,22 @@
 /* Variables Globales */
 :root {
   --marron1: #523000;
-  --marron2: rgb(100, 73, 41);
-  --gris1:#23201e;
+  --marron2: #9C5B00;
+  --gris1:#222121;
+  --dorado1:#C97600;
+  --celeste1:#2B7BAD;
+  --celeste2:#70C5FA;
+  --cremita1:#FAC170;
+  --cremita2:#FFCF8C;
+}
+
+.btn.btn-primary{
+  background-color: var(--celeste1);
+  border: #523000;
+}
+
+.btn.btn-primary:hover{
+  background-color: var(--celeste2);
 }
 
 a{
@@ -76,11 +90,14 @@ a{
     height: 2rem;
   }
   .carta-en-mazo{
-    background-color: rgb(118, 89, 17);
+    background-color: var(--marron1);
   }
 
+  #deckbuilder{
+    background-color: var(--dorado1);
+  }
   .card-deck{
-    background-color: var(--gris1);
+    background-color: var(--dorado1);
     padding: 0.2rem;
     margin: 0.2rem;
   }
