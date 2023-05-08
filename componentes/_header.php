@@ -1,7 +1,7 @@
 <header>
 <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary"> 
   <div class="container-fluid">
-  <a class="navbar-brand p-0" <?php if ($titulo=='Inicio'): echo 'aria-current="page" href="#"';else: echo'" href="index"';endif;?>><img src="./img/logo.png" alt="logo de DECKStrategy" width="120"></a>
+  <a class="navbar-brand p-0 py-1" <?php if ($titulo=='Inicio'): echo 'aria-current="page" href="#"';else: echo'" href="index"';endif;?>><img src="./img/logo.png" alt="logo de DECKStrategy" width="120"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,7 +21,7 @@
         </li>
         <div>
         <li class="nav-item">
-          <a class="nav-link <?php if ($titulo=='Ingresar'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="Ingresar"';endif;?>>Ingresar</a>
+          <a class="nav-link <?php if ($titulo=='Administracion'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="admin-usuarios"';endif;?>>Administracion</a>
         </li>
       </ul>
     </div>

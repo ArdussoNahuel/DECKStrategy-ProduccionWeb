@@ -51,7 +51,6 @@ a{
   
   body {
     background-color: var(--gris1);
-    padding-top: 3.5rem;
   }
   nav {
     background-color: var(--marron1);
@@ -73,7 +72,7 @@ a{
 
   #baner{
     background-image: url(../img/fondo-baner.jpeg);
-    height: 7rem;
+    min-height: 10rem;
 
   }
   .listamazo{
@@ -109,6 +108,19 @@ a{
   #selectTipo1>option,#selectTipo2>option{
     color: #23201e;
   }
+
+  .filtro-usuario{
+    background-color: var(--dorado1);
+  }
+
+  #tabla-usuarios thead{
+    background-color: var(--dorado1);
+  }
+
+  #tabla-usuarios tbody{
+    background-color: var(--marron2);
+  }
+
   /*
   .listamazos{
     background-color: #673c00;
