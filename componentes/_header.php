@@ -14,7 +14,7 @@
           <a class="nav-link <?php if ($titulo=='Biblioteca'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="biblioteca-mazos"';endif;?>>Biblioteca de Mazos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($titulo=='Randomizador'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="randomizador" target="_blank"';endif;?>>Randomizador</a>
+          <a class="nav-link <?php if ($titulo=='Randomizador'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="randomizador"';endif;?>>Randomizador</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?php if ($titulo=='Creador'): echo 'activo'?>" <?php echo 'aria-current="page" href="#"';else: echo'" href="creador-mazo"';endif;?>>Creador de Mazo</a>
